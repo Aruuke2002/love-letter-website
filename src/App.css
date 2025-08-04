@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Dancing Script', 'Great Vibes', cursive;
+  color: #8b0000;
+  --heart-size: 20px;
+
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #d6336c;
+  margin-bottom: 20px;
+
+}
+
+
+.reveal-button {
+  background-color: #d6336c;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.love-letter {
+  background-color: #fffaf0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  transition: all 0.5s ease;
+  text-align: center;
+
+}
+
+
+.heart {
+  position: absolute;
+  width: var(--heart-size);
+  height: var(--heart-size);
+  background: #d6336c;
+  transform: rotate(45deg);
+  pointer-events: none; 
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+
+
+}
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: var(--heart-size);
+  height: var(--heart-size);
+  background: #d6336c;
+  border-radius: 50%;
+}
+.heart:before {
+  top: calc(-1 * var(--heart-size) / 2);
+  left: 0;
+}
+.heart:after {
+  top: 0;
+  left: calc(-1 * var(--heart-size) / 2);
+}
+@keyframes fall {
+  0% {
+    top: -50px;
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+}
