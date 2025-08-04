@@ -10,3 +10,21 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# Vite + React SPA
+
+This is a simple single-page application built with [Vite](https://vitejs.dev/) and React.
+
+## 🚀 Run Locally
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Aruuke2002/love-letter-website.git
+   cd vite-react-app
+
+To start
+
+npm run dev 
+
+the browser is - http://localhost:5173
